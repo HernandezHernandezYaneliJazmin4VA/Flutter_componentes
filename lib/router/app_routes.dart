@@ -8,9 +8,21 @@ class AppRoutes {
   static final menuOption = <MenuOption>[
     MenuOption(
         icon: Icons.remove,
-        name: "Listviwe tipo 1",
+        name: "Listview tipo 1",
         route: "listview1",
-        screen: ListView1Screen())
+        screen: ListView1Screen()),
+    MenuOption(
+      icon: Icons.remove,
+      name: "Listview tipo 2",
+      route: "listview2",
+      screen: ListView2screen(),
+    ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "tabbar y tabview",
+      route: "TabBar",
+      screen: TabScreen(),
+    ),
   ];
 //Creamos lista map donde obtiene todas las rutas
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
