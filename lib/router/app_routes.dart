@@ -23,6 +23,18 @@ class AppRoutes {
       route: "TabBar",
       screen: TabScreen(),
     ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "tipos de botones",
+      route: "Buttonview",
+      screen: BottonScreen(),
+    ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "tipos de Textfield",
+      route: "Textfield",
+      screen: TextFieldScreen(),
+    ),
   ];
 //Creamos lista map donde obtiene todas las rutas
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
