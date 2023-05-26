@@ -22,16 +22,53 @@ class _TextFieldScreenState extends State<TextFieldScreen> {
         ),
         body: TabBarView(
           children: <Widget>[
-            Center(
+            SingleChildScrollView(
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  TextField(),
+                  TextField(
+                    decoration: InputDecoration(
+                      hintText: "Username",
+                    ),
+                  ),
+                  TextField(
+                    decoration: InputDecoration(border: InputBorder.none),
+                  ),
+                  TextField(
+                    decoration: InputDecoration(
+                        hintText: "Username",
+                        labelText: "Login",
+                        icon: Icon(Icons.email)),
+                  ),
+                  TextField(
+                    textAlign: TextAlign.right,
+                  ),
+                  TextField(
+                    maxLength: 5,
+                  ),
+                  TextField(
+                    keyboardType: TextInputType.number,
+                  ),
+                  TextField(
+                    obscureText: true,
+                  ),
+                  TextField(
+                    toolbarOptions: ToolbarOptions(
+                        cut: false, copy: true, paste: true, selectAll: true),
+                  ),
+                  TextField(
+                    toolbarOptions: ToolbarOptions(
+                        cut: false, copy: true, paste: true, selectAll: true),
+                  ),
+                ],
               ),
             ),
             Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset('assets/tabview.jpeg'),
+                  Image.asset("assets/button.jpeg"),
                   Text("Codigo"),
                 ],
               ),
