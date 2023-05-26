@@ -6,7 +6,6 @@ class AlertScreen extends StatefulWidget {
 }
 
 class _AlertScreenState extends State<AlertScreen> {
-  int _value = 1;
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -31,9 +30,11 @@ class _AlertScreenState extends State<AlertScreen> {
                     margin: const EdgeInsets.all(10),
                     color: Colors.pink,
                     child: TextButton(
-                      child: Text("Boton texto",
+                      child: Text("dame clic",
                           style: TextStyle(color: Colors.white)),
-                      onPressed: () {},
+                      onPressed: () {
+                        _showDialog(context);
+                      },
                     )),
               ],
             ),
@@ -49,6 +50,40 @@ class _AlertScreenState extends State<AlertScreen> {
           ],
         ),
       ),
+    );
+  }
+
+  _showDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return Expanded(
+          child: AlertDialog(
+            title: Text('Bienvenido'),
+            content: Text('¿Te gustaria aprender mas de Flutter?'),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+                child: Text(
+                  'SI',
+                  style: TextStyle(color: Color(0xffffffff)),
+                ),
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+                child: Text(
+                  'NO',
+                  style: TextStyle(color: Color(0xffffffff)),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
     );
   }
 }
