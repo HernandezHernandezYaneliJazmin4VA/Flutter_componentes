@@ -23,23 +23,38 @@ class _BottonScreenState extends State<BottonScreen> {
         ),
         body: TabBarView(
           children: <Widget>[
-            Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  TextButton(
+            ListView(
+              physics: const AlwaysScrollableScrollPhysics(),
+              padding: const EdgeInsets.all(10),
+              children: <Widget>[
+                Container(
+                    margin: const EdgeInsets.all(10),
+                    color: Colors.pink,
+                    child: TextButton(
+                      child: Text("Boton texto",
+                          style: TextStyle(color: Colors.white)),
+                      onPressed: () {},
+                    )),
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  color: Colors.pink,
+                  child: ElevatedButton(
                     child: Text("Button"),
                     onPressed: () {},
                   ),
-                  ElevatedButton(
+                ),
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  color: Colors.pink,
+                  child: OutlinedButton(
                     child: Text("Button"),
                     onPressed: () {},
                   ),
-                  OutlinedButton(
-                    child: Text("Button"),
-                    onPressed: () {},
-                  ),
-                  FloatingActionButton(
+                ),
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  color: Colors.pink,
+                  child: FloatingActionButton(
                     child: Icon(Icons.save),
                     backgroundColor: Colors.pink,
                     foregroundColor: Colors.white,
@@ -47,11 +62,19 @@ class _BottonScreenState extends State<BottonScreen> {
                       setState(() {});
                     },
                   ),
-                  IconButton(
+                ),
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  color: Colors.pink,
+                  child: IconButton(
                     icon: Icon(Icons.castle),
                     onPressed: () {},
                   ),
-                  DropdownButton(
+                ),
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  color: Colors.pink,
+                  child: DropdownButton(
                       value: _value,
                       items: [
                         DropdownMenuItem(
@@ -69,7 +92,11 @@ class _BottonScreenState extends State<BottonScreen> {
                         });
                       },
                       hint: Text("Select item")),
-                  PopupMenuButton(
+                ),
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  color: Colors.pink,
+                  child: PopupMenuButton(
                       itemBuilder: (context) => [
                             PopupMenuItem(
                               child: Text("First"),
@@ -80,7 +107,11 @@ class _BottonScreenState extends State<BottonScreen> {
                               value: 2,
                             )
                           ]),
-                  ButtonBar(
+                ),
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  color: Colors.pink,
+                  child: ButtonBar(
                     children: [
                       TextButton(
                         child: Text("Yes"),
@@ -92,8 +123,8 @@ class _BottonScreenState extends State<BottonScreen> {
                       ),
                     ],
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
             Center(
               child: Column(

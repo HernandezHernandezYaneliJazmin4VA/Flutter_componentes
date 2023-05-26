@@ -4,3 +4,4 @@ export 'package:fluttercomponentes/screens/listview2__screen.dart';
 export 'package:fluttercomponentes/screens/tabview_screen.dart';
 export 'package:fluttercomponentes/screens/button_screen.dart';
 export 'package:fluttercomponentes/screens/textfield_screen.dart';
+export 'package:fluttercomponentes/screens/alertdialog_screen.dart';

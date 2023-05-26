@@ -35,6 +35,12 @@ class AppRoutes {
       route: "Textfield",
       screen: TextFieldScreen(),
     ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "tipos de Alert Dialog",
+      route: "AlertDialog",
+      screen: AlertScreen(),
+    ),
   ];
 //Creamos lista map donde obtiene todas las rutas
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
