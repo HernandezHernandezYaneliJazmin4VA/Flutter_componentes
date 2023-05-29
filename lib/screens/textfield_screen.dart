@@ -68,7 +68,7 @@ class _TextFieldScreenState extends State<TextFieldScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset("assets/button.jpeg"),
+                  Image.asset("assets/Textfield.jpeg"),
                   Text("Codigo"),
                 ],
               ),

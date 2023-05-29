@@ -41,6 +41,24 @@ class AppRoutes {
       route: "AlertDialog",
       screen: AlertScreen(),
     ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "Card",
+      route: "cardview",
+      screen: CardScreen(),
+    ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "Grid View",
+      route: "gridview",
+      screen: GridScreen(),
+    ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "Iconos",
+      route: "Iconos",
+      screen: IconScreen(),
+    ),
   ];
 //Creamos lista map donde obtiene todas las rutas
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {

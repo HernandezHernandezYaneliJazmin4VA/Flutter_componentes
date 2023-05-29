@@ -42,7 +42,7 @@ class _AlertScreenState extends State<AlertScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset('assets/Button.jpeg'),
+                  Image.asset('assets/Alertdialog.jpeg'),
                   Text("Codigo"),
                 ],
               ),
