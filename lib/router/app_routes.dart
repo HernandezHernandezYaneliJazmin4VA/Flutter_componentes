@@ -59,6 +59,18 @@ class AppRoutes {
       route: "Iconos",
       screen: IconScreen(),
     ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "Linear Progress",
+      route: "Linear Progress",
+      screen: LinearProgressScreen(),
+    ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "Slider",
+      route: "Slider",
+      screen: SliderScreen(),
+    ),
   ];
 //Creamos lista map donde obtiene todas las rutas
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {

@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
     final menuOptions = AppRoutes.menuOption;
     return Scaffold(
         appBar: AppBar(
-          title: Text('title'),
+          title: Text('Hernandez Hernandez 6V'),
         ),
         body: ListView.separated(
           itemBuilder: (context, index) => ListTile(
