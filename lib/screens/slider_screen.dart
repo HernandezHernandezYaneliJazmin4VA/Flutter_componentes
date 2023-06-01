@@ -38,7 +38,7 @@ class _SliderScreenState extends State<SliderScreen> {
                     },
                     min: 0,
                     max: 10,
-                    activeColor: Colors.green,
+                    activeColor: Colors.pink,
                     inactiveColor: Colors.green[100],
                     label: val.round().toString(),
                     divisions: 10,

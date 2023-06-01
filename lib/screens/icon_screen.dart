@@ -193,10 +193,10 @@ class _IconScreenState extends State<IconScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Icon(
-                        Icons.star,
+                        Icons.close,
                         color: Colors.white,
                       ),
-                      Text("star", style: TextStyle(color: Colors.white))
+                      Text("Close", style: TextStyle(color: Colors.white))
                     ],
                   ),
                 ),
@@ -206,10 +206,10 @@ class _IconScreenState extends State<IconScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Icon(
-                        Icons.star,
+                        Icons.done,
                         color: Colors.white,
                       ),
-                      Text("star", style: TextStyle(color: Colors.white))
+                      Text("done", style: TextStyle(color: Colors.white))
                     ],
                   ),
                 ),
@@ -219,10 +219,10 @@ class _IconScreenState extends State<IconScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Icon(
-                        Icons.star,
+                        Icons.check_box,
                         color: Colors.white,
                       ),
-                      Text("star", style: TextStyle(color: Colors.white))
+                      Text("check box", style: TextStyle(color: Colors.white))
                     ],
                   ),
                 ),
@@ -232,10 +232,10 @@ class _IconScreenState extends State<IconScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Icon(
-                        Icons.star,
+                        Icons.download,
                         color: Colors.white,
                       ),
-                      Text("star", style: TextStyle(color: Colors.white))
+                      Text("download", style: TextStyle(color: Colors.white))
                     ],
                   ),
                 ),

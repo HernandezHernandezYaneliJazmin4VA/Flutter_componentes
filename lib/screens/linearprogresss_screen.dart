@@ -30,18 +30,14 @@ class _LinearProgressScreenState extends State<LinearProgressScreen> {
                 Container(
                     margin: const EdgeInsets.all(10),
                     color: Colors.pink,
-                    child: LinearProgressIndicator()),
-                Container(
-                    margin: const EdgeInsets.all(10),
-                    color: Colors.pink,
                     child: LinearProgressIndicator(
-                      value: 0.7,
+                      value: 0.4,
                     )),
                 Container(
                     margin: const EdgeInsets.all(10),
                     color: Colors.pink,
                     child: LinearProgressIndicator(
-                      value: 0.7,
+                      value: 0.6,
                       valueColor:
                           new AlwaysStoppedAnimation<Color>(AppTheme.primary),
                     )),
@@ -49,7 +45,7 @@ class _LinearProgressScreenState extends State<LinearProgressScreen> {
                     margin: const EdgeInsets.all(10),
                     color: Colors.pink,
                     child: LinearProgressIndicator(
-                      value: 0.7,
+                      value: 0.8,
                       valueColor:
                           new AlwaysStoppedAnimation<Color>(AppTheme.primary),
                       backgroundColor: Colors.grey,
@@ -58,7 +54,14 @@ class _LinearProgressScreenState extends State<LinearProgressScreen> {
                     margin: const EdgeInsets.all(10),
                     color: Colors.pink,
                     child: LinearProgressIndicator(
-                      value: 0.7,
+                        value: 0.7,
+                        backgroundColor: Colors.grey,
+                        color: Colors.purple)),
+                Container(
+                    margin: const EdgeInsets.all(10),
+                    color: Colors.pink,
+                    child: LinearProgressIndicator(
+                      value: 1.0,
                       backgroundColor: Colors.grey,
                       color: AppTheme.primary,
                       minHeight: 10,
