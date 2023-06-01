@@ -10,3 +10,5 @@ export 'package:fluttercomponentes/screens/gridview_screen.dart';
 export 'package:fluttercomponentes/screens/icon_screen.dart';
 export 'package:fluttercomponentes/screens/linearprogresss_screen.dart';
 export 'package:fluttercomponentes/screens/slider_screen.dart';
+export 'package:fluttercomponentes/screens/checkbox_screen.dart';
+export 'package:fluttercomponentes/screens/radiobutton_screen.dart';

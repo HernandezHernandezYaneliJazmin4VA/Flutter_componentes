@@ -71,6 +71,18 @@ class AppRoutes {
       route: "Slider",
       screen: SliderScreen(),
     ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "CheckBox",
+      route: "CheckBox",
+      screen: CheckBoxScreen(),
+    ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "Radio Button",
+      route: "Radioview",
+      screen: RadioScreen(),
+    ),
   ];
 //Creamos lista map donde obtiene todas las rutas
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
