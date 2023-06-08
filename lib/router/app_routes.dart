@@ -83,6 +83,12 @@ class AppRoutes {
       route: "Radioview",
       screen: RadioScreen(),
     ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "Text Button",
+      route: "Textbuttonscreen",
+      screen: textbuttonScreen(),
+    ),
   ];
 //Creamos lista map donde obtiene todas las rutas
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
